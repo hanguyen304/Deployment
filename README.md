@@ -11,7 +11,7 @@ GIT_WORK_TREE=/home/ha/Deployment/deploy/blue-www/ git checkout -f
 
 ### Create blue/green infrastructure
 
-Clone the [app repo](https://github.com/CSC-DevOps/App), and set the following remotes.  S
+Clone the [app repo](https://github.com/CSC-DevOps/App), and set the following remotes.  
 
     git remote add blue file:///home/ha/Deployment/deploy/blue.git
     git remote add green file:///home/ha/Deployment/deploy/green.git
@@ -45,7 +45,7 @@ The traffic is default to BLUE (`var TARGET = BLUE;`), route `/switch` will trig
 To test migration:
 
 1. Upload a picture to BLUE instance (`http://localhost:9090`) using route `/upload` (like in HW3)
-2. In the beginning, the default TARGET is BLUE. Switch to GREEN instance by `http://localhost:8080/switch`. The `/switch` rout will also migrate the picture from BLUE to GREEN. Check by accessing `http://localhost:5060/meow`
+2. In the beginning, the default TARGET is BLUE. Switch to GREEN instance by `http://localhost:8080/switch`. The `/switch` route will also migrate the picture from BLUE to GREEN. Check by accessing `http://localhost:5060/meow`
 
 ### Demonstrate mirroring
 Create a variable flag (`var flag = process.argv.slice(2)[0];`). When set to 1 (turn on mirroring) will forward information added to the picture list, to the other slice. 
