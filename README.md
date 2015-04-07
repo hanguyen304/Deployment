@@ -44,6 +44,7 @@ The traffic is default to BLUE (`var TARGET = BLUE;`), route `/switch` will trig
 
 ### Demonstrate mirroring
 Create a variable flag (`var flag = process.argv.slice(2)[0];`). When set to 1 (turn on mirroring) will forward information added to the picture list, to the other slice. 
+
 1. Run `infrastructure.js` as follow: `node infrastructure 1` to turn on mirroring
 2. Upload a picture to `http://localhost:8080` using route `/upload` (like in HW3) (The instance can be either BLUE or GREEN at this point)
 3. The picture will be mirrored to both instances BLUE and GREEN, check by accessing `http://localhost:5060/meow` and `http://localhost:9090/meow`
