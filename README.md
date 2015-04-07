@@ -33,7 +33,7 @@ and launch blue and green:
     exec('forever -w --watchDirectory=/home/ha/Deployment/deploy/blue-www start deploy/blue-www/blue_server.js 9090');
     console.log("blue slice");
 
-    // Launch blue slice
+// Launch blue slice
     exec('forever -w --watchDirectory=/home/ha/Deployment/deploy/green-www start deploy/green-www/green_server.js 5060');
     console.log("green slice");
 ```
