@@ -40,6 +40,7 @@ and launch blue and green:
 
 ### Demonstrate `/switch` route and migration of data on switch
 The traffic is default to BLUE (`var TARGET = BLUE;`), route `/switch` will trigger a switch from BLUE to GREEN and vice versa and also migrating data between the two instances.
+![alt text] (https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0752/0c126bd4-dcbb-11e4-9a6d-c946ea946509.png)
 
 ### Demonstrate mirroring
 Create a variable flag (`var flag = process.argv.slice(2)[0];`). When set to 1 (turn on mirroring) will forward information added to the picture list, to the other slice. 
